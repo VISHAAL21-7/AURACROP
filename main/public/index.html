@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AuraCrop</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>AuraCrop 🌱</h1>
+      <p class="tagline">Quick crop diagnosis • Multilingual • Farmer-first</p>
+    </header>
+    <section id="uploader" class="card">
+      <h2>Upload crop image</h2>
+      <select id="part">
+        <option value="leaf">Leaf</option>
+        <option value="stem">Stem</option>
+        <option value="fruit">Fruit</option>
+      </select>
+      <input id="file" type="file" accept="image/*" />
+      <button id="btnUpload">Upload & Diagnose</button>
+      <div id="status"></div>
+    </section>
+    <section id="results" class="card" style="display:none;">
+      <h2>Latest result</h2>
+      <pre id="resultJson"></pre>
+    </section>
+    <footer>
+      <small>AuraCrop Demo App</small>
+    </footer>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>
