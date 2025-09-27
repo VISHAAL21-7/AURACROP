@@ -49,17 +49,3 @@ It aims to reduce crop loss, support decision making, and provide an accessible 
 6. Chat history & follow-ups stored  
 
 ---
-
-## 🛠 Setup & Run Locally
-
-```bash
-# Clone the repo
-git clone https://github.com/YOUR_USERNAME/AuraCrop.git
-cd AuraCrop
-
-# Install Firebase CLI
-npm install -g firebase-tools
-firebase login
-
-# Start local emulators (Auth, Firestore, Functions, Hosting)
-firebase emulators:start
